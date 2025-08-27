@@ -14,7 +14,7 @@ for (const callButton of callButtons) {
   second: '2-digit',
   hour12: false
 });
-        const callHistory = document.getElementById("call-history");
+        const callHistory = document.getElementById("card-container");
         const callHistoryNewCard = document.createElement("div");
         callHistoryNewCard.innerHTML = `
         <div class="space-y-2 mt-4">
@@ -31,6 +31,12 @@ for (const callButton of callButtons) {
     })
 }
 
+// clear the call history
+const clearButton = document.getElementById("clear-btn");
+clearButton.addEventListener('click', function() {
+    const callHistory = document.getElementById("card-container");
+    callHistory.innerHTML = "";
+})
 
 
 
