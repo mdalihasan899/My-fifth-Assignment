@@ -2,9 +2,7 @@
 const callButtons = document.getElementsByClassName('call-btn');
 // console.log(callButtons);
 
-for (const callButton of callButtons) {
-    console.log(callButton);
-    
+for (const callButton of callButtons) { 
     callButton.addEventListener('click', function(){
         const serviceTitel = callButton.parentElement.parentElement.children[1].children[0].innerText;
         const serviceNumber = callButton.parentElement.parentElement.children[2].children[0].innerText;
@@ -28,6 +26,21 @@ for (const callButton of callButtons) {
                 </div>
       `;
       callHistory.append(callHistoryNewCard);
+
+
+    
+         
+    })
+}
+
+//   heart click count
+const heartButtons = document.getElementsByClassName('heart-btn');
+for (const heartButton of heartButtons) {
+    // console.log(heartButton);
+    heartButton.addEventListener("click", function(){
+    const heartCountElement = document.getElementById("heart-count");
+    const currentHeartCount = Number(heartCountElement.innerText);
+    heartCountElement.innerText = currentHeartCount + 1;
     })
 }
 
