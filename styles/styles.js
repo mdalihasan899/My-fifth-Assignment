@@ -1,6 +1,5 @@
 // local time
 const callButtons = document.getElementsByClassName('call-btn');
-// console.log(callButtons);
 
 for (const callButton of callButtons) { 
     callButton.addEventListener('click', function(){
@@ -14,14 +13,13 @@ for (const callButton of callButtons) {
             hour12: false
         });
 
-        
         const callHistory = document.getElementById("card-container");
         const callHistoryNewCard = document.createElement("div");
         callHistoryNewCard.innerHTML = `
         <div class="space-y-2 mt-4">
                         <div class="flex justify-between items-center bg-gray-100 p-4 rounded-2xl">
                             <div>
-                                <h1 class="text-[13px] pb-1 font-semibold">${serviceTitel}</h1>
+                                <h1 class="text-[15px] pb-1 font-semibold">${serviceTitel}</h1>
                                 <p class="font-medium">${serviceNumber}</p>
                             </div>
                             <span>${currentTime}</span>
@@ -41,11 +39,7 @@ for (const callButton of callButtons) {
         coinCountElement.innerText = currentCoinCount - 20;
         callHistory.append(callHistoryNewCard);
     }   
-
-    
       })
-
-
 }
 
 // copy click count
