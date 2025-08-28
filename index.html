@@ -12,14 +12,14 @@
 </head>
 <body class="bg-[#41ff6a11]">
     <header class="items-center bg-white">
-        <section class="flex justify-between px-[60px] py-6">
-            <div class="flex gap-3 h-12 items-center">
+        <section class="flex max-lg:flex-col max-lg:items-center max-md:items-center max-md:gap-14 justify-between px-[60px] py-6">
+            <div class="flex  gap-3 h-12 items-center max-md:flex-col max-md:gap-0">
                 <img height="50" width="50" src="assets/logo.png" alt="">
                 <div>
-                    <h2 class="text-[#006747] font-bold text-2xl font-">Emergency <br> Service</h2>
+                    <h2 class="text-[#006747] font-bold  text-2xl font-">Emergency <br> <span class="max-md:pl-5">Service</span></h2>
                 </div>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="flex max-md:pt-5 max-lg:pt-5 items-center gap-5">
                 <div>
                     <button class="flex px-8 py-[8px] items-center bg-[#41ff6b1a] rounded-full"><span id="heart-count" class="pr-3 font-bold">0</span><img height="24" width="24" src="assets/heart.png" alt=""></button>
                 </div>
@@ -35,17 +35,17 @@
         </section>
 
         <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white py-6">
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col max-lg:text-center max-lg:p-1 max-md:p-1 items-center">
                 <img height="92" width="92" src="assets/logo-dark.png" alt="">
-                <h1 class="text-4xl font-semibold py-3">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class=" font-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <h1 class="text-4xl max-md:text-2xl font-semibold py-3">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class=" font-semibold text-xl max-md:text-base">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
         </section>
     </header>
 
     <main>
-        <section class="flex pt-12 px-14 gap-7 pb-20">
-            <div class="grid grid-cols-3 w-4/5 gap-7">
+        <section class="flex max-lg:flex-col pt-12 px-14 max-md:px-8 max-md:pt-8 gap-7 pb-20">
+            <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 w-4/5 max-lg:w-full max-md:w-full gap-7">
             <!-- card -->
                 <div class="bg-white p-8 rounded-xl shadow-md">
                     <div class="flex justify-between items-center">
@@ -219,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="bg-white p-4 pt-6 rounded-xl w-1/5 shadow-md">
+            <div class="bg-white p-4 pt-6 rounded-xl w-1/5 max-lg:w-full max-md:w-full shadow-md">
                     <!-- call history -->
                 <div class="flex justify-between  ">
                     <h1 class="pt-1 text-[17px] font-semibold"><i class="fa-regular fa-clock text-gray-500"></i> Call History</h1>
